@@ -1,3 +1,7 @@
 export const Connect = () => {
-  return <button>Connect</button>
+  return (
+    <button className="bg-primary text-[color:--text-color] py-[5px] px-[20px] text-[length:--btn-font-size] font-bold">
+      Connect
+    </button>
+  )
 }
