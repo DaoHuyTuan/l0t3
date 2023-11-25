@@ -1,4 +1,5 @@
 import { Connect } from '@/components/Connect'
+import { Header } from '../Header'
 
 interface ILayerProps {
   children: React.ReactNode
@@ -6,8 +7,7 @@ interface ILayerProps {
 export const Layer = (props: ILayerProps) => {
   return (
     <div>
-      <span>Events</span>
-      <Connect />
+      <Header />
       {props.children}
     </div>
   )

@@ -1,6 +1,11 @@
-import Image from 'next/image'
+'use client'
 import 'inter-ui/inter.css'
-import { Connect } from '@/components/Connect'
+import { WagmiProvider } from '@/contexts/WagmiProvider'
+
 export default function Home() {
-  return <main className="flex"></main>
+  return (
+    <WagmiProvider>
+      <main className="flex"></main>
+    </WagmiProvider>
+  )
 }
