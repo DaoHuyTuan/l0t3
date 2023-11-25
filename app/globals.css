@@ -13,7 +13,9 @@
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;
 
-    --primary: 156 68% 52% / 1;
+    --primary: hsla(150, 97%, 61%, 0.867);
+    --primary-hover: hsl(150, 100%, 77%);
+    /* --primary: 156 68% 52% / 1; */
     --primary-foreground: 210 20% 98%;
     /* button */
     --btn-font-size: 12px;
