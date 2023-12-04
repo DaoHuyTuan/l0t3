@@ -2,18 +2,24 @@ import { ChevronDown, Fuel } from 'lucide-react'
 import { FaGasPump } from 'react-icons/fa'
 import { RiSpeedUpFill, RiSlowDownFill } from 'react-icons/ri'
 import * as Separator from '@radix-ui/react-separator'
+import { CircleLoading } from '@/components/circle-loading'
 
 export const GasStationPortal = () => {
   return (
     <div className="flex shadow-[0_0px_5px_1px_rgba(0,0,0,0.3)] bg-[white] px-[15px] py-[15px] flex-col gap-[10px] min-w-[200px] rounded-[5px] animate-fade cursor-pointer">
       <div className="flex flex-col border-[1px] px-[10px] py-[10px] bg-[--primary] rounded-[5px] border-[2px] border-[black]">
-        <div className="flex items-center gap-[5px]  ">
-          <FaGasPump size={12} />
-          <span className="text-[10px] font-bold">ETH current gas</span>
-          <ChevronDown size={12} />
-        </div>
-        <div className="flex justify-start">
-          <span className="text-[20px] font-bold ">25.43 Gwei</span>
+        <div className="flex justify-between items-center">
+          <div>
+            <div className="flex items-center gap-[5px]  ">
+              <FaGasPump size={12} />
+              <span className="text-[10px] font-bold">ETH current gas</span>
+              <ChevronDown size={12} />
+            </div>
+            <div className="flex justify-between">
+              <span className="text-[20px] font-bold ">25.43 Gwei</span>
+            </div>
+          </div>
+          <CircleLoading />
         </div>
       </div>
       <div className="flex flex-row gap-[10px]">

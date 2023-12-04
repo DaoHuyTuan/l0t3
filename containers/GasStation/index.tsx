@@ -5,7 +5,7 @@ import { Fuel, ChevronDown } from 'lucide-react'
 
 export const GasStation = () => {
   return (
-    <HoverCard.Root>
+    <HoverCard.Root open={true}>
       <HoverCard.Trigger asChild>
         <GasStationTrigger />
       </HoverCard.Trigger>
