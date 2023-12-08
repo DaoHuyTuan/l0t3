@@ -20,11 +20,7 @@ export const DialogConnect = () => {
           <Dialog.Title className="bg-[--primary] p-[10px] font-bold text-[14px] border-b-[2px] border-b-[black]">
             Connect
           </Dialog.Title>
-          <Dialog.Content
-            className="p-[10px] cursor-auto pointer-events-auto"
-            asChild>
-            <DialogConnectContent />
-          </Dialog.Content>
+          <DialogConnectContent />
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>

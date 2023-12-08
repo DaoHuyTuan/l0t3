@@ -7,12 +7,15 @@ export const DialogConnectContent = React.forwardRef<HTMLDivElement>(
   (props, forwardRef) => {
     return (
       <div
+        className="p-[20px] w-[400px]"
         ref={forwardRef}
         {...props}>
-        <div className="flex gap-[10px]">
+        <span>Choose a wallet to connect</span>
+        <div className="flex gap-[20px]">
           {wallets.map(wallet => {
             return (
               <WalletContainer
+                key={wallet.value}
                 label={wallet.label}
                 value={wallet.value}
                 size={Number(wallet.size)}
