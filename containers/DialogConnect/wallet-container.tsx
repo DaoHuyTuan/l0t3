@@ -7,16 +7,18 @@ interface IProps {
 }
 export const WalletContainer = (props: IProps) => {
   return (
-    <div className="flex flex-row items-center gap-[5px] px-[5px] py-[3px] border-[2px] border-[transparent] cursor-pointer hover:border-[2px]">
-      <div className="flex flex-col items-center justify-center w-[30px] h-[30px]">
+    <div className="group flex flex-row items-center gap-[10px] p-[7px] border-[2px] border-[black] bg-[black] cursor-pointer hover:bg-[--primary] ">
+      <div className="flex flex-col items-center justify-center w-[20px] h-[20px]">
         <Image
           src={props.url}
           width={props.size}
           height={props.size}
           alt={props.value}
         />
-        <span className=" font-bold text-[10px]">{props.label}</span>
       </div>
+      <span className=" font-bold text-[12px] text-[white] group-hover:text-[black]">
+        {props.label}
+      </span>
     </div>
   )
 }

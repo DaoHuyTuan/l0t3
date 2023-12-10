@@ -7,13 +7,10 @@ export const DialogConnectContent = React.forwardRef<HTMLDivElement>(
   (props, forwardRef) => {
     return (
       <div
-        className="flex flex-col py-[10px] w-[400px]"
+        className="flex flex-col  w-[300px] gap-[20px] rounded-[5px]"
         ref={forwardRef}
         {...props}>
-        <span className="font-bold text-[16px]">
-          Choose a wallet to connect
-        </span>
-        <div className="flex gap-[20px]">
+        <div className="flex gap-[20px] flex-col w-full">
           {wallets.map(wallet => {
             return (
               <WalletContainer
@@ -25,6 +22,12 @@ export const DialogConnectContent = React.forwardRef<HTMLDivElement>(
               />
             )
           })}
+        </div>
+        <div className="flex justify-center">
+          <span className="text-[12px] text-center">
+            By using L0t3, you agree to our <strong>Terms of Service</strong>{' '}
+            and our <strong>Privacy Policy</strong>.
+          </span>
         </div>
       </div>
     )
